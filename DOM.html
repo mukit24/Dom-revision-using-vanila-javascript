@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Play With DOM</title>
+</head>
+<body>
+    <div class="bg-light p-3">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-10">
+                    <h2 class="text-center p-3" id="header-title">To-Do App</h2>
+                    <div class="row">
+                        <div class="col-6">
+                            <h3 class="text-success">Major Features-</h3>
+                            <ul id="feature-list">
+                                <li>Add task</li>
+                                <li>Delete task</li>
+                                <li>Update task</li>
+                                <li>View task</li>
+                            </ul>
+                        </div>
+                        <div class="col-6" id="live">
+                            <h3 class="text-primary">Live Commentary</h3>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-4">
+                            <form class="d-flex mb-4">
+                                <input class="form-control me-2" type="text" id="task-input" placeholder="Write Task Name">
+                                <button class="btn btn-success" type="submit">Submit</button>
+                            </form>
+                            <h4 class="text-success text-center pb-3">Completed Tasks</h4>
+                            <ul class="list-group" id="completed">
+                                <li class="list-group-item">
+                                    An item
+                                    <button class="btn btn-danger btn-sm float-end">Delete</button>
+                                </li>
+                                <li class="list-group-item">
+                                    An item
+                                    <button class="btn btn-danger btn-sm float-end">Delete</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-8">
+                            <h4 class="text-danger text-center pb-3">Incompleted Tasks</h4>
+                            <ul class="list-group" id="incompleted">
+                                <li class="list-group-item">
+                                    An item
+                                    <button class="btn btn-success btn-sm float-end complete">Task Done</button>
+                                </li>
+                                <li class="list-group-item">
+                                    An item
+                                    <button class="btn btn-success btn-sm float-end complete">Task Done</button>
+                                </li>
+                               
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="script_dom.js"></script>
+</body>
+</html>
